@@ -47,4 +47,11 @@ function yee_ha(number) {
   }
 }
 
-export { hello, SqFeet2Acre, Mowthelawn, AirQualityIndex, yee_ha };
+function slopeofline (x1, y1, x2, y2) {
+
+  var slope;
+  slope = (y2-y1)/(x2-x1);
+  return Number(slope.toFixed(2));
+}
+
+export { hello, SqFeet2Acre, Mowthelawn, AirQualityIndex, yee_ha, slopeofline };

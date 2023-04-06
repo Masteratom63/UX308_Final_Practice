@@ -1,4 +1,10 @@
-import { hello, SqFeet2Acre, Mowthelawn, AirQualityIndex } from '../src/functions.js';
+import {
+  hello,
+  SqFeet2Acre,
+  Mowthelawn,
+  AirQualityIndex,
+  yee_ha, slopeofline,
+} from '../src/functions.js';
 
 function Hello() {
   return (
@@ -47,4 +53,27 @@ function Air() {
   );
 }
 
-export { Hello, Acres, Lawn, Air };
+function Yee_Ha() {
+  return (
+    <section>
+      <h2>results</h2>
+      <p>yee_ha(21) == "{yee_ha(21)}"</p>
+      <p>yee_ha(9) == "{yee_ha(9)}"</p>
+      <p>yee_ha(14) == "{yee_ha(14)}"</p>
+      <p>yee_ha(20) == "{yee_ha(20)}"</p>
+    </section>
+  );
+}
+
+function Slope() {
+  return (
+    <section>
+      <h2>results</h2>
+      <p>slopeofline(10,20,30,40) == "{slopeofline(10,20,30,40)}"</p>
+      <p>slopeofline(100,200,300,400) == "{slopeofline(100,200,300,400)}"</p>
+      <p>slopeofline(200,400,600,800) == "{slopeofline(200,400,600,800)}"</p>
+    </section>
+  );
+}
+
+export { Hello, Acres, Lawn, Air, Yee_Ha, Slope };
